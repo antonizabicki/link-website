@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINK-TEMPLATE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        h2, p {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+            margin-bottom: 6px;
+        }
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 100px;
+            height: 100px;
+        
+            object-fit: cover;
+            margin-bottom: 10px;
+         
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 90%;
+            max-width: 400px;
+        }
+        .link {
+            display: block;
+            padding: 15px;
+            background-color: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .link:hover {
+            background-color: #444;
+            transform: scale(1.05);
+            box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <img src="avatar.png" alt="Zdjęcie profilowe">
+        <h2>quei</h2>
+        <p>Musican, Graphic Designer</p>
+    </div>
+    <div class="container">
+        <a class="link" href="https://quei.me/">▫️about me▫️</a>
+        <a class="link" href="https://what-is-next.pl/">▫️my label▫️</a>
+        <a class="link" href="https://soundcloud.com/quei_music/weightless-remix">▫️weightless [newest remix]▫️</a>
+        <a class="link" href="https://www.instagram.com/quei_music/">▫️ig▫️</a>
+        <a class="link" href="https://youtube.com/@quei_music">▫️yt▫️</a>
+        <a class="link" href="https://soundcloud.com/quei_music">▫️sc▫️</a>
+    </div>
+</body>
+</html>
